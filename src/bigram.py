@@ -1,6 +1,6 @@
 import string, random
 
-DATASET_PATH = "shakespeare.txt"
+DATASET_PATH = "./datasets/shakespeare.txt"
 
 def main() -> None:
   lines = []

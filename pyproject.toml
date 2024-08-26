@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "language_models_examples"
+version = "2024.8.27"
+dependencies = []
+requires-python = ">=3.8"
+
+[tool.hatch.envs.default.scripts]
+bigram = "python src/bigram.py"
+n-gram = "python src/n-gram.py"
+
+[tool.pyright]
+venvPath = "."
+venv = ".hatch"
