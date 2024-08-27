@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "language_models_examples"
 version = "2024.8.27"
-dependencies = []
+dependencies = ["torch"]
 requires-python = ">=3.8"
 
 [tool.hatch.envs.default.scripts]

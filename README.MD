@@ -1,7 +1,7 @@
 # Language models examples
 
 ```bash
-# example of running model
+# example of running a model
 
 hatch run bigram
 ```
