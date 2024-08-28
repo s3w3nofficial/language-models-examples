@@ -5,12 +5,16 @@ build-backend = "hatchling.build"
 [project]
 name = "language_models_examples"
 version = "2024.8.27"
-dependencies = ["torch"]
+dependencies = ["torch", "jupyter"]
 requires-python = ">=3.8"
+
+[tool.hatch.envs.pyenv]
+type = "virtual"
 
 [tool.hatch.envs.default.scripts]
 bigram = "python src/bigram.py"
 n-gram = "python src/n-gram.py"
+jupyter = "python -m jupyter notebook docs/."
 
 [tool.pyright]
 venvPath = "."
